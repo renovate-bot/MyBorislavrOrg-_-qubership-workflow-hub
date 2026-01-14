@@ -87,7 +87,7 @@ jobs:
       - name: Extract Docker metadata
         if: inputs.tags == ''
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           context: ${{ inputs.context }}
           images: ghcr.io/${{ github.repository_owner }}/${{ inputs.artifact-id || matrix.component.name }}
