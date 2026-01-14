@@ -109,7 +109,7 @@ runs:
       with:
         maven-version: ${{ inputs.maven-version }}
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         ref: ${{ inputs.ref }}
         path: ${{ inputs.module }}
@@ -140,7 +140,7 @@ runs:
       shell: bash
     - name: Checkout
       if: ${{ inputs.dry-run == 'false' && inputs.bumb-dependencies-after-release == 'true' }}
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         ref: main
         path: ${{ inputs.module }}

@@ -27,7 +27,7 @@ jobs:
   assign-labels:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Execute assign labels
         id: action-assign-labels
         uses: mauroalderete/action-assign-labels@v1

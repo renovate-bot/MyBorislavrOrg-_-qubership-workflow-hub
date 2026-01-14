@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Replicating common files
         uses: derberg/manage-files-in-multiple-repositories@v2
         with:
@@ -58,7 +58,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Replicating common config files
         uses: derberg/manage-files-in-multiple-repositories@v2
         with:
@@ -80,7 +80,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Replicating file
       uses: derberg/manage-files-in-multiple-repositories@v2
       with:
@@ -98,7 +98,7 @@ jobs:
     needs: [replicate_common_config_files, replicate_superlinter_configs]
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Replicating common workflows
         uses: derberg/manage-files-in-multiple-repositories@v2
         with:
@@ -125,7 +125,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Replicating file
       uses: derberg/manage-files-in-multiple-repositories@v2
       with:
@@ -143,7 +143,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Obsoleted workflow cleanup
         uses: derberg/manage-files-in-multiple-repositories@v2
         with:
